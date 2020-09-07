@@ -6,10 +6,10 @@ void setup(){
   background(255);//strokeWeight(10);
   //noStroke();
   fill(100, 50, 255);
-  ni = int(width/r/2+1);
-  nj = int(height/r/2+1);
-  for(int i=0; i<ni; i++){
-    for(int j=0; j<nj; j++){
+  ni = int(width/r/2);
+  nj = int(height/r/2);
+  for(int i=0; i<=ni; i++){
+    for(int j=0; j<=nj; j++){
       drawUnit(i*r*2+r, j*r*2+r, r);
     }
   }
